@@ -1,0 +1,48 @@
+/* Webpixels CSS */
+/* Utility and component-centric Design System based on Bootstrap for fast, responsive UI development */
+/* URL: https://github.com/webpixels/css */
+
+@import url(https://unpkg.com/@webpixels/css@1.1.5/dist/index.css);
+
+/* Bootstrap Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.0/font/bootstrap-icons.min.css");
+
+.divouter {
+  background: -webkit-linear-gradient(left, #dafffd, #51f0e8);
+}
+.li1 {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.39);
+}
+.linkmail {
+  color: #215191;
+}
+.headerclass {
+  background-repeat: none;
+  background-size: 100%;
+  background: -webkit-linear-gradient(left, #31b4ae, #31b4ae);
+}
+.img {
+  width: 100px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  margin-left: 150px;
+  padding-bottom: 15px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.hearder{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 0 3px 6px rgba(255, 255, 255, 0.582);
+
+}

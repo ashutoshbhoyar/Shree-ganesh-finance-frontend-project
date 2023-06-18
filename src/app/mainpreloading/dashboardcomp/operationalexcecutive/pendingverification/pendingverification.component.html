@@ -1,0 +1,30 @@
+
+<div class="text-center div1"><h1>Document Verification Pending</h1></div>
+<div class="container">
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>customerId</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Mobile Number</th>
+<th>profession</th>
+<th>View</th>
+</tr>
+
+<tr *ngFor="let d of customerdata">
+    <td>{{d.customerId}}</td>
+    <td>{{d.customerFirstName}}</td>
+    <td>{{d.customerLastName}}</td>
+    <td>{{d.customerMobileNumber}}</td>
+    <td>{{d.customerProfession.professionType}}</td>
+    <button (click)="singlecustomeralldata(d)">Show Data</button>
+    <td >
+
+   </td>
+    
+  
+</tr>
+</tbody>
+</table>
+</div>

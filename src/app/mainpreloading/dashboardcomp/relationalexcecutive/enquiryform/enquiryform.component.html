@@ -1,0 +1,124 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<section class="vh-150 gradient-custom" >
+    <div class="container py-6 ">
+      <div class="row justify-content-center align-items-center ">
+        <div class="col-5 col-lg-5 col-xl-7">
+          <div class="card" >
+            <div class="card-body p-4 p-md-5">
+              <h2 style="text-align: center;">Loan Enquiry Form</h2>
+              
+              
+              <form [formGroup]="enquiryForm" (ngSubmit)="enquirySubmit()">
+                  <div class="col-md-12 mb-4">
+
+                    <div class="form-outline">
+                        <label class="form-label" for="firstName">First Name</label>
+                      <input type="text" id="firstName" class="form-control form-control-lg" formControlName="enquiryFirstName" placeholder="Enter FirstName"/>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-outline">
+                            <label class="form-label" for="firstName">Middle Name</label>
+                            <input type="text" id="firstName" class="form-control form-control-lg" formControlName="enquiryMiddleName" placeholder="Enter MiddleName"/>
+                          </div>
+                    </div>
+                    
+                      
+                      <div class="row">
+
+                      </div>
+                      <div class="form-outline">
+                        <label class="form-label" for="firstName">Last Name</label>
+                        <input type="text" id="firstName" class="form-control form-control-lg" formControlName="enquiryLastName" placeholder="Enter LastName"/>
+                      </div>
+                    
+                      <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-outline">
+                                    <label class="form-label" for="firstName">Mobile Number</label>
+                                    <input type="text" id="firstName" class="form-control form-control-lg" formControlName="enquiryMobileNumber" placeholder="Enter MobileNumber"/>
+                                </div>           
+                            </div>
+
+                            <div class="col-md-6 mb-4"> 
+                                <div class="form-outline">
+                                    <label class="form-label" for="firstName">Email Id</label>
+                                    <input type="text" id="firstName" class="form-control form-control-lg" formControlName="enquiryEmail" placeholder="Enter Email Id"/>  
+                                </div>
+                            </div>
+                            
+                        </div>
+                      
+
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                                <label class="form-label" for="firstName">Pan Card</label>
+                                <input type="text" id="firstName" class="form-control form-control-lg" formControlName="enquiryPanCard" placeholder="Enter Pancard Id"/>
+                              </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                                <label class="form-label" for="firstName">Aadhar Card</label>
+                                <input type="text" id="firstName" class="form-control form-control-lg" formControlName="enquiryAdhaarCard" placeholder="Enter Adhaar Id"/>  
+                              </div>
+                        </div>
+                      </div>
+
+                      <div class="form-outline">
+                        <label class="form-label" for="firstName">Address</label>
+                        <input type="text" id="firstName" class="form-control form-control-lg" formControlName="enquiryAddress" placeholder="Enter Address"/>
+                      </div>                      
+
+                      
+  
+                  </div>
+                  
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4 d-flex align-items-center">
+  
+                    <div class="form-outline datepicker w-100">
+                        <label for="birthdayDate" class="form-label">Date Of Birth</label>
+                      <input type="date" class="form-control form-control-lg" id="birthdayDate" formControlName="enquiryDateOfBirth" placeholder="enter enquiryDateOfBirth"/>  
+                      
+                    </div>
+  
+                  </div>
+                  <div class="col-md-6 mb-4">
+  
+                    <h4 class="mb-2 pb-1">Gender: </h4>
+  
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" formControlName="enquiryGender"  name="enquiryGender" id="femaleGender"
+                        value="Female" checked />
+                      <label class="form-check-label" for="femaleGender">Female</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" formControlName="enquiryGender"  name="enquiryGender" id="maleGender"
+                        value="Male"  />
+                      <label class="form-check-label" for="maleGender">Male</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" formControlName="enquiryGender"  name="enquiryGender" id="otherGender"
+                        value="Other" />
+                      <label class="form-check-label" for="otherGender">Other</label>
+                    </div>
+  
+                  </div>
+                </div>
+  
+    
+                <div class="mt-4 pt-2">
+                  <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                </div>
+  
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

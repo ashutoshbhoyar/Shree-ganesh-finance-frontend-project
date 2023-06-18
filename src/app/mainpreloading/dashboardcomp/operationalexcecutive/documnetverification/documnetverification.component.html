@@ -1,0 +1,372 @@
+
+
+
+    <mat-vertical-stepper >    
+      <mat-step >
+              <div >
+                  <ng-template matStepLabel> Personal Details </ng-template>
+                  
+                  <mat-form-field appearance="fill">
+                      <mat-label>First Name</mat-label>
+                      <input matInput value="{{customersingledata.customerFirstName}}" readonly >
+                    </mat-form-field>
+  
+                    <mat-form-field appearance="fill">
+                      <mat-label>Middle Name</mat-label>
+                      <input matInput value="{{customersingledata.customerMiddleName}}" readonly>
+                    </mat-form-field>
+          
+                    <mat-form-field appearance="fill">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput value="{{customersingledata.customerLastName}}" readonly >  
+                      </mat-form-field>
+          
+          
+                      <br>
+                      <mat-form-field appearance="fill">
+                        <mat-label>PanCard Number</mat-label>
+                        <input matInput value="{{customersingledata.customerPanCard}}" readonly >
+                      </mat-form-field>
+          
+                      
+                      <mat-form-field appearance="fill">
+                        <mat-label>AdhaarCard Number</mat-label>
+                        <input matInput value="{{customersingledata.customerAdhaarCard}}" readonly  >
+                      </mat-form-field>
+          
+                      <br>
+                      <mat-form-field appearance="fill">
+                        <mat-label>Mobile Number</mat-label>
+                        <input matInput value="{{customersingledata.customerMobileNumber}}" readonly  >
+                      </mat-form-field>
+          
+                      <mat-form-field appearance="fill">
+                          <mat-label>Additional Mobile Number</mat-label>
+                          <input matInput value="{{customersingledata.customerAdditionalMobileNumber}}" readonly  >
+                        </mat-form-field>
+  
+                      <mat-form-field appearance="fill">
+                        <mat-label>Email id</mat-label>
+                        <input matInput value="{{customersingledata.customerEmail}}" readonly >
+                      </mat-form-field>
+          
+                      <br>
+                      <mat-form-field appearance="fill">
+                        <mat-label>Date Of Birth</mat-label>
+                        <input matInput value="{{customersingledata.customerDateOfBirth}}" readonly >
+                      </mat-form-field>
+          
+                      
+                      <mat-form-field appearance="fill">
+                        <mat-label>Gender</mat-label>
+                        <input matInput value="{{customersingledata.customerGender}}" readonly >
+                      </mat-form-field>
+  
+                      <mat-form-field appearance="fill">
+                          <mat-label>Customer Qualifiacton</mat-label>
+                          <input matInput value="{{customersingledata.customerQualification}}" readonly >
+                        </mat-form-field>
+                       <br>
+                         
+                      <mat-form-field appearance="fill">
+                        <mat-label>Required Loan Amount</mat-label>
+                        <input matInput value="{{customersingledata.customerloanAmountRequired}}" readonly >
+                      </mat-form-field>
+                      
+                      <mat-form-field appearance="fill">
+                        <mat-label> Loan Tenure</mat-label>
+                        <input matInput value="{{customersingledata.customerLoanTenureInMonth}}" readonly >
+                      </mat-form-field>
+          
+                      <br>
+  
+                  
+                      <div>
+                          <button mat-raised-button color="primary" matStepperNext type="button">Next</button>
+                        </div>
+  
+                  </div>
+          </mat-step>
+  
+          <mat-step >
+              <div >
+                  <ng-template matStepLabel> Permanent Address Details </ng-template>
+  
+                  <mat-form-field appearance="fill">
+                      <mat-label>Area Name</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.permanentAddress.areaname}}" readonly >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>City Name</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.permanentAddress.cityname}}" readonly   >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>District</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.permanentAddress.district}}" readonly  >
+                    </mat-form-field>
+        
+                    <br>
+                    <mat-form-field appearance="fill">
+                      <mat-label>State</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.permanentAddress.state}}" readonly  >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>Pincode</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.permanentAddress.pincode}}" readonly  >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>House Number</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.permanentAddress.houseNumber}}" readonly   >
+                    </mat-form-field>
+        
+                    <br>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Street Name</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.permanentAddress.streetName}}" readonly  >
+                    </mat-form-field>
+              
+                  <div>
+                      <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                       <button mat-raised-button color="primary" matStepperNext>Next</button>
+                    </div>
+              </div>
+          </mat-step> 
+  
+          <mat-step >
+              <div >
+                  <ng-template matStepLabel> Local Address Details </ng-template>
+  
+                  <mat-form-field appearance="fill">
+                      <mat-label>Area Name</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.localAddress.areaname}}" readonly   >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>City Name</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.localAddress.cityname}}" readonly  >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>District</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.localAddress.district}}" readonly  >
+                    </mat-form-field>
+        
+                    <br>
+                    <mat-form-field appearance="fill">
+                      <mat-label>State</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.localAddress.state}}" readonly  >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>Pincode</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.localAddress.pincode}}" readonly >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>House Number</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.localAddress.houseNumber}}" readonly  >
+                    </mat-form-field>
+        
+                    <br>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Street Name</mat-label>
+                      <input matInput value="{{customersingledata.customerAddress.localAddress.streetName}}" readonly >
+                    </mat-form-field>
+              
+                  <div>
+                      <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                       <button mat-raised-button color="primary" matStepperNext>Next</button>
+                    </div>
+              </div>
+          </mat-step> 
+  
+          <mat-step >
+              <div >
+                  <ng-template matStepLabel> Profession Details </ng-template>
+      
+                  <mat-form-field appearance="fill">
+                      <mat-label>professionType</mat-label>
+                      <input matInput  value="{{customersingledata.customerProfession.professionType}}" readonly >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>professionMonthlyIncome</mat-label>
+                        <input matInput  value="{{customersingledata.customerProfession.professionMonthlyIncome}}" readonly>
+                      </mat-form-field>
+                      <br>
+                      <mat-form-field appearance="fill">
+                        <mat-label>professionDesignation</mat-label>
+                        <input matInput  value="{{customersingledata.customerProfession.professionDesignation}}" readonly>
+                      </mat-form-field>
+                      <br>
+                 
+                  <div>
+                  <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                   <button mat-raised-button color="primary" matStepperNext>Next</button>
+                </div>
+              </div>
+          </mat-step>
+          <mat-step >
+            <div >
+                <ng-template matStepLabel> Customer Bank<br> Details </ng-template>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Customer Bank AccountNo</mat-label>
+                    <input matInput value="{{customersingledata.customerBankDetails.customerBankAccountNo}}" readonly >
+                  </mat-form-field>
+                  <br>
+    
+                  <mat-form-field appearance="fill">
+                    <mat-label>customerBankName</mat-label>
+                    <input matInput value="{{customersingledata.customerBankDetails.customerBankName}}" readonly >
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Customer Bank Branch Name</mat-label>
+                    <input matInput value="{{customersingledata.customerBankDetails.customerBankBranchName}}" readonly  >
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Customer  Bank IfscNo</mat-label>
+                    <input matInput value="{{customersingledata.customerBankDetails.customerBankIfscNo}}" readonly >
+                  </mat-form-field>
+                  <br>
+                <div>
+
+                    <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                     <button mat-raised-button color="primary" matStepperNext>Next</button>
+                  </div>
+            </div>
+        </mat-step>
+      
+      
+  
+          <mat-step >
+              <div >
+                  <ng-template matStepLabel> Dealer Details </ng-template>
+  
+                  <mat-form-field appearance="fill">
+                      <mat-label>Dealer Name</mat-label>
+                      <input matInput value="{{customersingledata.customerDealer.dealerName}}" readonly  >
+                    </mat-form-field>
+                    <br>
+      
+                    <mat-form-field appearance="fill">
+                      <mat-label>Dealer Address</mat-label>
+                      <input matInput value="{{customersingledata.customerDealer.dealerAddress}}" readonly  >
+                    </mat-form-field>
+                    <br>
+                  <div>
+  
+                      <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                       <button mat-raised-button color="primary" matStepperNext>Next</button>
+                    </div>
+              </div>
+          </mat-step>
+          <mat-step >
+            <div >
+                <ng-template matStepLabel>Vehicle Information </ng-template>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Customer Vehicle Model</mat-label>
+                    <input matInput value="{{customersingledata.customerVehicleInformation.customerVehicleModel}}" readonly >
+                  </mat-form-field>
+
+                  <mat-form-field appearance="fill">
+                    <mat-label>Vehicle Price</mat-label>
+                    <input matInput value="{{customersingledata.customerVehicleInformation.customerVehiclePrice}}" readonly >
+                  </mat-form-field>
+                  <br>
+    
+                 
+                <div>
+
+                    <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                     <button mat-raised-button color="primary" matStepperNext>Next</button>
+                  </div>
+            </div>
+        </mat-step>
+  
+          <mat-step >
+              <div >
+                  <ng-template matStepLabel> Dealer Bank Details </ng-template>
+  
+                  <mat-form-field appearance="fill">
+                      <mat-label>Dealer Bank Account Number</mat-label>
+                      <input matInput value="{{customersingledata.customerDealer.dealerBankDetails.dealerBankAccountNo}}" readonly  >
+                    </mat-form-field>
+                    <br>
+  
+                    <mat-form-field appearance="fill">
+                      <mat-label>Dealer Bank Name</mat-label>
+                      <input matInput value="{{customersingledata.customerDealer.dealerBankDetails.dealerBankName}}" readonly >
+                    </mat-form-field>
+                    <br>
+  
+                    <mat-form-field appearance="fill">
+                      <mat-label>Dealer Bank Branch name</mat-label>
+                      <input matInput value="{{customersingledata.customerDealer.dealerBankDetails.dealerBankBranchName}}" readonly >
+                    </mat-form-field>
+                    <br>
+  
+                    <mat-form-field appearance="fill">
+                      <mat-label>Dealer Bank IFSc Code</mat-label>
+                      <input matInput value="{{customersingledata.customerDealer.dealerBankDetails.dealerBankIFSCNo}}" readonly  >
+                    </mat-form-field>
+                    <br>
+  
+                  <div>
+                      <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                       <button mat-raised-button color="primary" matStepperNext>Next</button>
+                    </div>
+              </div>
+          </mat-step>
+  
+      
+       <mat-step >
+          <div >
+              <ng-template matStepLabel> Document Details </ng-template> 
+
+              <div>
+                addressProof
+                <iframe [src]="''+customersingledata.customerAllDocuments.addharCard"></iframe><br> <br><br>
+     photo
+     <img [src]="'data:image/jpeg;base64,'+customersingledata.customerAllDocuments.photo" >
+     
+
+              </div>
+         
+        
+  
+         
+      
+        
+              
+          </div>
+          <div>
+            <br>
+            <br>
+
+                    <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                    <button mat-raised-button color="accent" (click)="save(customersingledata.customerId,'DocumentVerificationOk')">verified</button>
+                        <button mat-raised-button color="warn" (click)="save(customersingledata.customerId,'DocumentRejected')">Reject</button>
+                  </div>
+      </mat-step>
+  </mat-vertical-stepper>
+
+      
+  
+  
+  

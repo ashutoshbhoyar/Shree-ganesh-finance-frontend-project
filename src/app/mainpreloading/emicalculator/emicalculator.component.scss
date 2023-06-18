@@ -1,0 +1,102 @@
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+
+
+.result {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(3, 73, 3);
+  text-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+
+
+.active {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 35px;
+    margin-bottom: -20px;
+  }
+}
+
+
+
+
+.left-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  text-shadow: 0 0 1px white;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h5,
+h6 {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: small;
+}
+
+.active {
+  background-color: #0DB9F0;
+}
+
+
+
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 35px;
+    margin-bottom: -20px;
+  }
+}
+
+.divbox {
+  background-color: #31b4adbd;
+padding-top: 10px;
+}
+.divouterbox{
+
+ box-shadow: 5px 5px 10px rgba(15, 15, 15, 0.575);
+ 
+
+}
+.well2{
+  padding-top: 17px;
+  padding-bottom: 10px;
+}
+
+
+.maindiv{
+background:-webkit-linear-gradient(left,#dafffd,#51f0e8) ;
+
+height: 1400px;
+}
+
+.headingFont{
+padding-left: 150px;
+text-shadow: 0 0 2px white;
+
+}
+.TextIn{
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.473);
+}

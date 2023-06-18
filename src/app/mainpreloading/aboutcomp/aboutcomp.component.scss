@@ -1,0 +1,27 @@
+.photo {
+  height: auto;
+  max-width: 70%;
+}
+
+.p {
+  text-align: right;
+  text-justify: distribute-all-lines;
+}
+.div1 {
+  background: -webkit-linear-gradient(left, #dafffd, #51f0e8);
+  height: 100%;
+}
+.headingFont {
+  padding-left: 150px;
+  text-shadow: 0 0 5px white;
+  text-align: center;
+}
+.container {
+  display: flex;
+}
+.column1 {
+  flex: 1;
+}
+.column2 {
+  flex: 1;
+}

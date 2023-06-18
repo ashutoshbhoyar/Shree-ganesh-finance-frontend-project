@@ -1,0 +1,42 @@
+<div class="text-center div1">
+  <h1>Genrated Sanction Letter For Verification</h1>
+</div>
+<table class="table table-striped" style="text-align: center;">
+    <tbody>
+        <tr >
+    <th>customerId</th>
+    <th>First Name</th>
+    <th>Rate of Interest</th>
+    <th>Mobile Number</th>
+    <th>STATUS</th>
+    <th>Action</th>
+</tr>
+
+  
+    <tr *ngFor="let d of customerdata" >
+      <td>{{ d.customerId }}</td>
+      <td>{{ d.customerFirstName }}</td>
+      <td>{{ d.customerSanctionLetter.rateOfInterest }}</td>
+      <td>{{ d.customerMobileNumber }}</td>
+      <td>{{ d.customerStatus }}</td>
+      <td>
+        <button
+          class="btn-outline-success"
+          (click)="
+            changecustomerstatusapprove(d.customerId, 'SanctionLetterApproved')
+          "
+        >
+          Approve
+        </button>
+        <button
+          class="btn-outline-danger"
+          (click)="
+            changecustomerstatusreject(d.customerId, 'SanctionLetterRejected')
+          "
+        >
+          Reject
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

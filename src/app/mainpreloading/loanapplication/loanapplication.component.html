@@ -1,0 +1,374 @@
+
+
+<form  [formGroup]="mainform" >
+    <mat-horizontal-stepper  linear>    
+      <mat-step [stepControl]="mainform.controls['personalDetails']">
+              <div formGroupName="personalDetails">
+                  <ng-template matStepLabel> Personal <br> Details </ng-template>
+                  
+                  <mat-form-field appearance="fill">
+                      <mat-label>First Name</mat-label>
+                      <input matInput placeholder="First name" formControlName="customerFirstName" >
+                    </mat-form-field>
+  
+                    <mat-form-field appearance="fill">
+                      <mat-label>Middle Name</mat-label>
+                      <input matInput placeholder="Middle name" formControlName="customerMiddleName" >
+                    </mat-form-field>
+          
+                    <mat-form-field appearance="fill">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput placeholder="Last name" formControlName="customerLastName" >  
+                      </mat-form-field>
+          
+          
+                      <br>
+                      <mat-form-field appearance="fill">
+                        <mat-label>PanCard Number</mat-label>
+                        <input matInput placeholder="PanCard Number" formControlName="customerPanCard" >
+                      </mat-form-field>
+          
+                      
+                      <mat-form-field appearance="fill">
+                        <mat-label>AdhaarCard Number</mat-label>
+                        <input matInput type="number" placeholder="AdhaarCard Number" formControlName="customerAdhaarCard" >
+                      </mat-form-field>
+          
+                      <br>
+                      <mat-form-field appearance="fill">
+                        <mat-label>Mobile Number</mat-label>
+                        <input matInput type="number" placeholder="Mobile Number" formControlName="customerMobileNumber" >
+                      </mat-form-field>
+          
+                      <mat-form-field appearance="fill">
+                          <mat-label>Additional Mobile Number</mat-label>
+                          <input matInput  type="number" placeholder="Addirional Mobile Number" formControlName="customerAdditionalMobileNumber" >
+                        </mat-form-field>
+  
+                      <mat-form-field appearance="fill">
+                        <mat-label>Email id</mat-label>
+                        <input matInput placeholder="Email Id" formControlName="customerEmail" >
+                      </mat-form-field>
+          
+                      <br>
+                      <mat-form-field appearance="fill">
+                        <mat-label>Date Of Birth</mat-label>
+                        <input matInput placeholder="Date Of Birth" formControlName="customerDateOfBirth" >
+                      </mat-form-field>
+          
+                      
+                      <mat-form-field appearance="fill">
+                        <mat-label>Gender</mat-label>
+                        <input matInput placeholder="Gender" formControlName="customerGender" >
+                      </mat-form-field>
+  
+                      <mat-form-field appearance="fill">
+                          <mat-label>Customer Qualifiacton</mat-label>
+                          <input matInput placeholder="Qualifiacton" formControlName="customerQualification" >
+                        </mat-form-field>
+                        <br><br>
+                        <h3>Other</h3>
+                        <mat-form-field appearance="fill">
+                          <mat-label>Loan Tenure</mat-label>
+                          <input matInput  type="number"  formControlName="customerLoanTenureInMonth" >
+                        </mat-form-field>
+
+                        <mat-form-field appearance="fill">
+                          <mat-label>Required Loan Amount</mat-label>
+                          <input matInput  type="number"  formControlName="customerloanAmountRequired" >
+                        </mat-form-field>
+          
+                      <br>
+  
+                  
+                      <div>
+                          <button mat-raised-button color="primary" matStepperNext>Next</button>
+                        </div>
+  
+                  </div>
+          </mat-step>
+  
+          <mat-step [stepControl]="mainform.controls['permanentAddress']">
+              <div formGroupName="permanentAddress">
+                  <ng-template matStepLabel> Permanent Address <br>Details </ng-template>
+  
+                  <mat-form-field appearance="fill">
+                      <mat-label>Area Name</mat-label>
+                      <input matInput placeholder="Area Name" formControlName="areaname" >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>City Name</mat-label>
+                      <input matInput placeholder="City name" formControlName="cityname" >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>District</mat-label>
+                      <input matInput placeholder="District" formControlName="district" >
+                    </mat-form-field>
+        
+                    <br>
+                    <mat-form-field appearance="fill">
+                      <mat-label>State</mat-label>
+                      <input matInput placeholder="State" formControlName="state" >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>Pincode</mat-label>
+                      <input matInput type="number" placeholder="Pincode" formControlName="pincode" >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>House Number</mat-label>
+                      <input matInput placeholder="House Number" formControlName="houseNumber" >
+                    </mat-form-field>
+        
+                    <br>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Street Name</mat-label>
+                      <input matInput placeholder="Street Name" formControlName="streetName" >
+                    </mat-form-field>
+              
+                  <div>
+                      <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                       <button mat-raised-button color="primary" matStepperNext>Next</button>
+                    </div>
+              </div>
+          </mat-step> 
+  
+          <mat-step [stepControl]="mainform.controls['localAddress']">
+              <div formGroupName="localAddress">
+                  <ng-template matStepLabel> Local Address<br>Details </ng-template>
+  
+                  <mat-form-field appearance="fill">
+                      <mat-label>Area Name</mat-label>
+                      <input matInput placeholder="Area Name" formControlName="areaname" >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>City Name</mat-label>
+                      <input matInput placeholder="City name" formControlName="cityname" >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>District</mat-label>
+                      <input matInput placeholder="District" formControlName="district" >
+                    </mat-form-field>
+        
+                    <br>
+                    <mat-form-field appearance="fill">
+                      <mat-label>State</mat-label>
+                      <input matInput placeholder="State" formControlName="state" >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>Pincode</mat-label>
+                      <input matInput type="number"  formControlName="pincode" >
+                    </mat-form-field>
+        
+                    
+                    <mat-form-field appearance="fill">
+                      <mat-label>House Number</mat-label>
+                      <input matInput placeholder="House Number" formControlName="houseNumber" >
+                    </mat-form-field>
+        
+                    <br>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Street Name</mat-label>
+                      <input matInput placeholder="Street Name" formControlName="streetName" >
+                    </mat-form-field>
+              
+                  <div>
+                      <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                       <button mat-raised-button color="primary" matStepperNext>Next</button>
+                    </div>
+              </div>
+          </mat-step> 
+  
+          <mat-step [stepControl]="mainform.controls['professionDetails']">
+              <div formGroupName="professionDetails">
+                  <ng-template matStepLabel> Profession <br>Details </ng-template>
+      
+                  <mat-form-field appearance="fill">
+                      <mat-label>professionType</mat-label>
+                      <input matInput formControlName="professionType" placeholder="professionType"
+                             required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>professionMonthlyIncome</mat-label>
+                        <input matInput type="number" formControlName="professionMonthlyIncome" placeholder="professionMonthlyIncome"
+                               required>
+                      </mat-form-field>
+                      <br>
+                      <mat-form-field appearance="fill">
+                        <mat-label>professionDesignation</mat-label>
+                        <input matInput formControlName="professionDesignation" placeholder="professionDesignation"
+                               required>
+                      </mat-form-field>
+                      <br>
+                 
+                  <div>
+                  <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                   <button mat-raised-button color="primary" matStepperNext>Next</button>
+                </div>
+              </div>
+          </mat-step>
+          <mat-step [stepControl]="mainform.controls['customerbankDetails']">
+            <div formGroupName="customerbankDetails">
+                <ng-template matStepLabel> Customer Bank<br> Details </ng-template>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Customer Bank AccountNo</mat-label>
+                    <input matInput type="number" placeholder="Customer Bank AccountNo" formControlName="customerBankAccountNo" >
+                  </mat-form-field>
+                  <br>
+    
+                  <mat-form-field appearance="fill">
+                    <mat-label>customerBankName</mat-label>
+                    <input matInput placeholder="customerBankName" formControlName="customerBankName" >
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Customer <br>Bank Branch Name</mat-label>
+                    <input matInput placeholder="customerBankBranchName" formControlName="customerBankBranchName" >
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Customer <br> Bank IfscNo</mat-label>
+                    <input matInput placeholder="customerBankIfscNo" formControlName="customerBankIfscNo" >
+                  </mat-form-field>
+                  <br>
+                <div>
+
+                    <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                     <button mat-raised-button color="primary" matStepperNext>Next</button>
+                  </div>
+            </div>
+        </mat-step>
+      
+  
+          <mat-step [stepControl]="mainform.controls['dealerDetails']">
+              <div formGroupName="dealerDetails">
+                  <ng-template matStepLabel> Dealer<br> Details </ng-template>
+  
+                  <mat-form-field appearance="fill">
+                      <mat-label>Dealer Name</mat-label>
+                      <input matInput placeholder="Dealer Name" formControlName="dealerName" >
+                    </mat-form-field>
+                    <br>
+      
+                    <mat-form-field appearance="fill">
+                      <mat-label>Dealer Address</mat-label>
+                      <input matInput placeholder="Dealer Address" formControlName="dealerAddress" >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Dealer Email</mat-label>
+                      <input matInput placeholder="dealerEmail" formControlName="dealerEmail" >
+                    </mat-form-field>
+                    <br>
+                  <div>
+  
+                      <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                       <button mat-raised-button color="primary" matStepperNext>Next</button>
+                    </div>
+              </div>
+          </mat-step>
+          <mat-step [stepControl]="mainform.controls['VehicleInformationDetails']">
+            <div formGroupName="VehicleInformationDetails">
+                <ng-template matStepLabel>Vehicle <br> Information </ng-template>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Customer Vehicle Model</mat-label>
+                    <input matInput placeholder="customerVehicleModel" formControlName="customerVehicleModel" >
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Vehicle Price</mat-label>
+                    <input matInput placeholder="customerVehiclePrice" formControlName="customerVehiclePrice" >
+                  </mat-form-field>
+                  <br>
+    
+
+                 
+                <div>
+
+                    <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                     <button mat-raised-button color="primary" matStepperNext>Next</button>
+                  </div>
+            </div>
+        </mat-step>
+  
+          <mat-step [stepControl]="mainform.controls['dealerBankDetails']">
+              <div formGroupName="dealerBankDetails">
+                  <ng-template matStepLabel> Dealer <br>Bank Details </ng-template>
+  
+                  <mat-form-field appearance="fill">
+                      <mat-label>Dealer Bank Account Number</mat-label>
+                      <input matInput type="number" placeholder="Dealer Bank Account Number" formControlName="dealerBankAccountNo" >
+                    </mat-form-field>
+                    <br>
+  
+                    <mat-form-field appearance="fill">
+                      <mat-label>Dealer Bank Name</mat-label>
+                      <input matInput placeholder="Dealer Bank Name" formControlName="dealerBankName" >
+                    </mat-form-field>
+                    <br>
+  
+                    <mat-form-field appearance="fill">
+                      <mat-label>Dealer Bank Branch name</mat-label>
+                      <input matInput placeholder="Dealer Bank Branch name" formControlName="dealerBankBranchName" >
+                    </mat-form-field>
+                    <br>
+  
+                    <mat-form-field appearance="fill">
+                      <mat-label>Dealer Bank IFSc Code</mat-label>
+                      <input matInput placeholder="Dealer Bank IFSc Code" formControlName="dealerBankIFSCNo" >
+                    </mat-form-field>
+                    <br>
+  
+                  <div>
+                      <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                       <button mat-raised-button color="primary" matStepperNext>Next</button>
+                    </div>
+              </div>
+          </mat-step>
+  
+      
+       <mat-step [stepControl]="mainform.controls['alldocumentsDetails']">
+          <div formGroupName="alldocumentsDetails">
+              <ng-template matStepLabel> Document <br> Details </ng-template> 
+         
+         Address Proof : <input type="file" (change)="onselectfile1($event)"><br>
+         Aaddhar Card :<input type="file" (change)="onselectfile2($event)"><br>
+         Bank Passbook :<input type="file" (change)="onselectfile3($event)"><br>
+         Driving License :<input type="file" (change)="onselectfile4($event)"><br>
+        
+         Income Proof :<input type="file" (change)="onselectfile5($event)"><br>
+         PanCard :<input type="file" (change)="onselectfile6($event)"><br>
+         Photo :<input type="file" (change)="onselectfile7($event)"><br>
+         Signature :<input type="file" (change)="onselectfile8($event)"><br>
+         Thumb :<input type="file" (change)="onselectfile9($event)"><br>
+  
+         
+      
+        
+              
+          </div>
+          <div>
+                    <button mat-raised-button color="primary" matStepperPrevious>Back</button> | 
+                    <button mat-raised-button color="accent" (click)="save()">Submit</button>
+                  </div>
+      </mat-step>
+  </mat-horizontal-stepper>
+  </form >
+
+    

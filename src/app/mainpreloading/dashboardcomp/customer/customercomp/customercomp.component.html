@@ -1,0 +1,35 @@
+<p>customercomp works!</p>
+
+
+<div class="text-center div1"><h1>Welcome {{customerdata.customerFirstName}}</h1></div>
+<div class="container">
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>customerId</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Mobile Number</th>
+<th>profession</th>
+<th>Action</th>
+</tr>
+
+<tr >
+    <td>{{customerdata.customerId}}</td>
+    <td>{{customerdata.customerFirstName}}</td>
+    <td>{{customerdata.customerLastName}}</td>
+    <td>{{customerdata.customerMobileNumber}}</td>
+    <td>{{customerdata.customerStatus}}</td>
+    <button *ngIf="checkifSaveEnabled()" 
+       (click)="payemi(customerdata)">Pay EMI</button>
+    <td >
+
+   </td>
+    
+  
+</tr>
+</tbody>
+</table>
+</div>
+
+

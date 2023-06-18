@@ -1,0 +1,92 @@
+
+<!-- <div class=" text-center div1"><h1>Total Enquiry Done</h1></div>
+<div class="container">
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>ENQUIRY ID</th>
+<th>ENQUIRY NAME</th>
+<th>ENQUIRY ADDRESS</th>
+<th>MOBILE NO</th>
+<th>EMAIL ID</th>
+<th>STATUS</th>
+</tr>
+
+<tr *ngFor="let d of sdata">
+    <td>{{d.enquiryId}}</td>
+    <td>{{d.enquiryFirstName}}</td>
+    <td>{{d.enquiryAddress}}</td>
+    <td>{{d.enquiryMobileNumber}}</td>
+    <td>{{d.enquiryEmail}}</td>
+    <td>{{d.enquiryStatus}}</td>
+  
+</tr>
+</tbody>                                                                                                                                                    
+</table>
+</div> -->
+<div class="text-center div1">
+  <h1>Total Enquiry Done</h1>
+</div>
+<div class="mat-elevation-z8">
+ 
+    <mat-form-field appearance="fill">
+    
+        <mat-label class="label">Filter</mat-label>
+        <input matInput autocomplete="off" placeholder="filter" (keyup)="Filterchange($event)">
+    </mat-form-field>
+
+    <!-- <mat-form-field appearance="fill">
+   <mat-select  (selectionChange)="onChange($event)">
+    <mat-option value="CibilOK">CibilOK</mat-option>
+    <mat-option value="CibilNotOK">CibilNotOK</mat-option>
+    <mat-option value="DocumentsSubmitted">DocumentsSubmitted</mat-option>
+    <mat-option value="DocumentVerificationOk">DocumentVerificationOk</mat-option>
+    <mat-option value="DocumentRejected">DocumentRejected</mat-option>
+    <mat-option value="SanctionLetterGenreted">SanctionLetterGenreted</mat-option>
+    <mat-option value="SanctionLetterApproved">SanctionLetterApproved</mat-option>
+    <mat-option value="SanctionLetterRejected">SanctionLetterRejected</mat-option>
+    </mat-select>
+   </mat-form-field> -->
+    
+        <table class="table table-striped"  mat-table matSort [dataSource]="dataSource">
+      
+          <!-- Position Column -->
+          <ng-container matColumnDef="EnquiryId">
+            
+            <th class="headline" mat-header-cell mat-sort-header *matHeaderCellDef>Enquiry Id</th>
+            <td class="bodyline"  mat-cell *matCellDef="let element"> {{element.enquiryId}} </td>
+          </ng-container>
+      
+          <!-- Name Column -->
+          <ng-container matColumnDef="EnquiryName">
+            <th class="headline" mat-sort-header mat-header-cell *matHeaderCellDef>Enquiry  Name</th>
+            <td class="bodyline" mat-cell *matCellDef="let element">{{element.enquiryFirstName}} {{element.enquiryLastName}}</td>
+          </ng-container>
+      
+          
+      
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="EnquiryMobileNumber">
+            <th class="headline" mat-header-cell *matHeaderCellDef>Enquiry Mobile</th>
+            <td class="bodyline" mat-cell *matCellDef="let element"> {{element.enquiryMobileNumber}} </td>
+          </ng-container>
+    
+          <ng-container matColumnDef="EnquiryMail"  >
+            <th class="headline" mat-header-cell *matHeaderCellDef>Enquiry Email</th>
+            <td class="bodyline" mat-cell *matCellDef="let element">{{element.enquiryEmail}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="Enquirystatus"  >
+            <th class="headline" mat-header-cell *matHeaderCellDef>Enquiry Status</th>
+            <td class="bodyline" mat-cell *matCellDef="let element">{{element.enquiryStatus}}</td>
+          </ng-container>
+      
+          <tr class="headline" mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                       showFirstLastButtons
+                       aria-label="Select page of periodic elements">
+        </mat-paginator>
+      </div>

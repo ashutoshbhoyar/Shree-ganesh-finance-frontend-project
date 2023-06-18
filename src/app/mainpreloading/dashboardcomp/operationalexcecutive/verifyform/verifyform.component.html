@@ -1,0 +1,23 @@
+<div class="alert alert-secondary text-center"><h1>Cutomer Details Database</h1></div>
+<div class="container">
+<table class="table table-striped ">
+<tbody>
+<tr>
+<th>Customer ID</th>
+<th>Customer Name</th>
+<th>Mobile No </th>
+<th>Email ID</th>
+<th>STATUS</th>
+</tr>
+
+<tr *ngFor="let d of vdata">
+    <td>{{d.customerId}}</td>
+    <td>{{d.customerFirstName}}</td>
+    <td>{{d.customerMobileNumber}}</td>
+    <td>{{d.customerEmail}}</td>
+    <td>{{d.customerStatus}}</td>
+  
+</tr>
+</tbody>                                                                                                                                                    
+</table>
+</div>

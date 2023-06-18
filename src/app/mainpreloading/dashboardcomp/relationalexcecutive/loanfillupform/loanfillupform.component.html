@@ -1,0 +1,28 @@
+<div class="text-center div1">
+  <h1>Eligible Customer For Loan Application Form</h1>
+</div>
+<div class="container">
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <th>ENQUIRY ID</th>
+        <th>ENQUIRY NAME</th>
+        <th>ENQUIRY ADDRESS</th>
+        <th>MOBILE NO</th>
+        <th>EMAIL ID</th>
+        <th>STATUS</th>
+        <th>APPLICATION FORM</th>
+      </tr>
+
+      <tr *ngFor="let d of sdata">
+        <td>{{ d.enquiryId }}</td>
+        <td>{{ d.enquiryFirstName }}</td>
+        <td>{{ d.enquiryAddress }}</td>
+        <td>{{ d.enquiryMobileNumber }}</td>
+        <td>{{ d.enquiryEmail }}</td>
+        <td>{{ d.enquiryStatus }}</td>
+        <td><button  class="btn btn-info btn-rounded" (click)="fillloanForm(d)">apply for loan</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

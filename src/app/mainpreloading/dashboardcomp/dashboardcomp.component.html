@@ -1,0 +1,145 @@
+<!-- Banner -->
+<!-- <a href="https://webpixels.io/components?ref=codepen" class="btn w-full btn-primary text-truncate rounded-0 py-2 border-0 position-relative" style="z-index: 1000;">
+    <strong>Crafted with Webpixels CSS:</strong> The design system for Bootstrap 5. Browse all components →
+</a> -->
+
+<!-- Dashboard -->
+<div
+  class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary divouter"
+>
+  <!-- Vertical Navbar -->
+  <nav
+    class="navbar show navbar-vertical h-lg-screen navbar-expand-lg px-0 py-0 navbar-light bg-white border-bottom border-bottom-lg-1 border-end-lg"
+    id="navbarVertical"
+  >
+    <div class="container-fluid" style="background-color: #31b4ae">
+      <!-- Toggler -->
+      <button
+        class="navbar-toggler ms-n2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#sidebarCollapse"
+        aria-controls="sidebarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Brand -->
+      <a class="navbar-brand py-lg-1 mb-lg-5 px-lg-6 me-0">
+        <img
+          style="
+            margin-left: 60px;
+            width: 90px;
+            height: 90px;
+            border-radius: 20px;
+            margin-top: 25px;
+          "
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrw7tGw-WhnRuUbPnYLbLs4eT3246t_marIw&usqp=CAU"
+          alt="..."
+        />
+        <h4
+        class="hearder"
+         
+        >
+          {{ header }}
+        </h4>
+        <p>
+          <i
+            class="fa fa-envelope-o"
+            style="font-size: 15px; margin-right: 5px"
+          ></i>
+          <a class="linkmail" href="mailto:#">{{ email }}</a>
+        </p>
+      </a>
+      <!-- User menu (mobile) -->
+      <div class="navbar-user d-lg-none">
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <!-- Toggle -->
+          <a
+            href="#"
+            id="sidebarAvatar"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <div class="avatar-parent-child">
+              <img
+                alt="Image Placeholder"
+                src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                class="avatar avatar- rounded-circle"
+              />
+              <span class="avatar-child avatar-badge bg-success"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidebarCollapse">
+        <!-- Navigation -->
+        <ul class="navbar-nav">
+          <li class="nav-item li1" *ngFor="let menu of menus[0][userRole]">
+            <a
+              class="nav-link"
+              [routerLink]="[userRole, menu.key]"
+              style="
+                font-weight: 500;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                  'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              "
+            >
+              <p>&gt; {{ menu.label }}</p>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Push content down -->
+        <div class="mt-auto"></div>
+        <!-- User (md) -->
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="bi bi-person-square" style="color: rgb(19, 19, 20)"></i>
+              Account
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="logout()">
+              <i
+                class="bi bi-box-arrow-left"
+                style="color: rgb(19, 19, 20)"
+              ></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="h-screen flex-grow-1 overflow-y-lg-auto">
+    <!-- Header -->
+    <header class="bg-surface-primary border-bottom pt-6 headerclass">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <img
+            class="img"
+            src="https://i.pinimg.com/originals/13/ac/86/13ac865516038308a176f8ab8fba2737.png"
+            alt="logo"
+          />
+          <div class="col-sm-6 col-12 mb-4 mb-sm-0">
+            <!-- Title -->
+            <h1 class="h1 mb-0 ls-tight heading">
+              {{ "Shree Ganesh Finance " }}
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <router-outlet class="router"></router-outlet>
+  </div>
+</div>
